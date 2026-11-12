@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-emerald-deep: #05160e;
+    --color-emerald-dark: #082216;
+    --color-emerald-card: #0d2d1e;
+    --color-emerald-border: #16422d;
+    --color-gold-bright: #f3cf65;
+    --color-gold-base: #d4af37;
+    --color-gold-dark: #9a761e;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #05160e;
+    color: #f2eee3;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', 'Plus Jakarta Sans', serif;
+}
+
+/* Subtle Islamic Star Pattern Background */
+.islamic-pattern {
+  background-color: #05160e;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(22, 66, 45, 0.4) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.islamic-arch {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #082216;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #194833;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Gold shimmer animation */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, #d4af37 0%, #fef3c7 50%, #d4af37 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: goldShimmer 6s linear infinite;
+}

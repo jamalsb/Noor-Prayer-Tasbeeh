@@ -1,0 +1,6 @@
+{
+  "name": "Noor - Prayer & Tasbeeh",
+  "description": "A modern Islamic mobile-friendly web application featuring an interactive Tasbeeh counter, live prayer times via Aladhan API, real-time Qibla compass, and multi-language support (English, Urdu, Arabic).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
